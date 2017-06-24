@@ -1,0 +1,12 @@
+<title>Smartnews</title>
+
+{% for c in tags %}
+
+{{c[0]}} <br><br>
+<img src="{{c[2]}}" style="width:200px;height:200px;"><br>
+<a href=" {{c[1]}}">Go to article </a> <br>
+
+<input type="checkbox" value="{{c[1]}}" name="channel"> <br>
+
+{% endfor %}
+<br>
